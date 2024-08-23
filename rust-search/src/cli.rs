@@ -57,7 +57,7 @@ pub struct Cli {
 	#[arg(long, default_value_t=false)]
 	pub min_hash_search: bool,
 	/// Combinations of num hashes and num bits for min hash search
-	#[arg(long, default_value="(16,5)")]
+	#[arg(long, default_value="(16,5,0)")]
 	pub min_hash_args: String,
 }
 

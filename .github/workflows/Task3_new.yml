@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-    name: Evaluation for Task 3 for the 100M dataset
+    name: Evaluation for Task 3 for the 100M dataset improved with non-exact matches and 32 bit references
     strategy:
       fail-fast: false
       matrix:
@@ -50,7 +50,7 @@ jobs:
             --probe-max 30 \
             --probe-steps 1 \
             --min-hash-search \
-            --min-hash-args "(57,12)" \
+            --min-hash-args "(80,20,1)" \
             --itq
       - uses: ./.github/actions/evaluation
         with:
